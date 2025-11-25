@@ -1,0 +1,38 @@
+{
+  "name": "TypeScript Dev Container",
+  
+  // Use Microsoft's official TS dev image for Node 20
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  
+  // Customisation for VS Code inside the container
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "eslint.validate": ["typescript", "javascript"],
+        "files.exclude": {
+          "**/.DS_Store": true,
+          "**/node_modules": true,
+          "**/dist": true
+        }
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense",
+        "streetsidesoftware.code-spell-checker",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.js-debug",
+        "gruntfuggly.todo-tree",
+        "editorconfig.editorconfig"
+      ]
+    }
+  },
+  
+  // Command to run after the container is created
+  "postCreateCommand": "npm install",
+  
+  // Default user
+  "remoteUser": "node"
+}

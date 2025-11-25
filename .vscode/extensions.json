@@ -1,0 +1,20 @@
+{
+    // Recommended extensions for this TypeScript project
+    "recommendations": [
+        "dbaeumer.vscode-eslint", // ESLint integration for TS/JS
+        "esbenp.prettier-vscode", // Prettier code formatter
+        "streetsidesoftware.code-spell-checker", // Spell checking in comments/docs
+        "ms-vscode.vscode-typescript-next", // Latest TypeScript language features
+        "ms-vscode.js-debug", // JavaScript/TypeScript debugging
+        "christian-kohler.path-intellisense", // Auto-path completion in imports
+        "naumovs.color-highlight", // Colour highlighting in code strings
+        "visualstudioexptteam.vscodeintellicode", // AI-assisted completions
+        "github.copilot", // (Optional) AI coding assistant
+        "gruntfuggly.todo-tree", // TODO/FIXME comment tracking
+        "ms-vscode-remote.vscode-remote-extensionpack"
+    ],
+    "unwantedRecommendations": [
+        "hookyqr.beautify", // Avoid conflict with Prettier
+        "ms-vscode.node-debug" // Old debugger, replaced by js-debug
+    ]
+}
